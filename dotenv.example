@@ -1,0 +1,3 @@
+# Create a copy of this file with the name .env
+export HEROKU_API_KEY=your-heroku-api-key
+export HEROKU_EMAIL_ADDRESS=david.salgado@digital.justice.gov.uk
