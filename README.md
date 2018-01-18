@@ -21,3 +21,8 @@ This will create your (empty) application on Heroku.
 
 If you have created your application in the shared MoJ Heroku account, you may need to add your personal account as a collaborator, so that you can deploy your code without having to log in using the main MoJ Heroku credentials.
 
+## Deploying the application code
+
+* Set heroku environment variables
+* Add a new git remote for the application
+* `git push [your remote] master`
