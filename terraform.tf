@@ -15,3 +15,8 @@ resource "heroku_app" "default" {
     "heroku/ruby"
   ]
 }
+
+resource "heroku_addon" "database" {
+  app  = "${heroku_app.default.name}"
+  plan = "${var.heroku_db_plan}"
+}
