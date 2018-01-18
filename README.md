@@ -17,4 +17,7 @@ Edit `.env` and update the environment variables, then;
     source .env
     make build
 
-This will create the application on Heroku.
+This will create your (empty) application on Heroku.
+
+If you have created your application in the shared MoJ Heroku account, you may need to add your personal account as a collaborator, so that you can deploy your code without having to log in using the main MoJ Heroku credentials.
+
