@@ -1,7 +1,7 @@
 # run `make (env) plan` etc
 demo:
-	$(eval export TF_VAR_env=demo)
-	$(eval export env_dir=demo)
+	$(eval export TF_VAR_env=staging)
+	$(eval export env_dir=staging)
 	@true
 
 staging:
