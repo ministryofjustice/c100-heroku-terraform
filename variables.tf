@@ -33,3 +33,20 @@ variable "heroku_couple_app_to_pipeline" {
   default = "0"
 }
 ############################################
+
+############################################
+# AWS Variables
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
+variable "aws_region" {
+  default = "eu-west-1"
+}
+variable "aws_ses_domain" {
+  default = "dsd.io"
+}
+variable "aws_ses_config_set_name" {
+  default = "c100-ses-dsd-io-config-set"
+}
+variable "aws_ses_sns_topic_name" {
+  default = "c100-ses-dsd-io-sns-topic"
+}
