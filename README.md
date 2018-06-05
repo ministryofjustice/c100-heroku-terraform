@@ -48,7 +48,7 @@ If you have created your application in the shared MoJ Heroku account, you may n
 Unfortunately not everything we need is fully supported on Terraform yet - so there are still some manual steps you'll need to perform after setting up the foundations with `make (env) apply`
 
 * Heroku pipeline Github integration (only available through the Heroku interface)
-* Email subscription to the SNS topic (if you _want_ to get notifications for all email events, that is - if not, you dont' need to do anything else)
+* Email subscription to the SNS topic (if you _want_ to get notifications for all email events, that is - if not, you dont' need to do anything else. If you _do_ want the notifications, you'll have to set them up in the AWS UI)
 
 ## Deploying the application code
 
