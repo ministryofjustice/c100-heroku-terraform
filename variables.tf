@@ -1,3 +1,6 @@
+############################################
+# HEROKU VARIABLES
+
 variable "heroku_email" {}
 variable "heroku_api_key" {}
 
@@ -15,6 +18,18 @@ variable "heroku_db_plan" {
   default = "heroku-postgresql:hobby-basic"
 }
 
-variable "app_debug" {
+variable "heroku_app_debug" {
   default = "false"
 }
+
+
+variable "heroku_pipeline_name" {
+  default = "c100-pipeline"
+}
+variable "heroku_pipeline_stage" {
+  default = "staging"
+}
+variable "heroku_couple_app_to_pipeline" {
+  default = "0"
+}
+############################################

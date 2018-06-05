@@ -15,7 +15,28 @@ To use this project, you need a Heroku API key. You can get this from the MoJ Di
 Edit `.env` and update the environment variables, then;
 
     source .env
-    make build
+
+## Running tasks
+
+The code is paramaterised, using an environment-specific config file (`environments/{env name}/terraform.tfvars`) to set appropriate values.
+
+To run a task, you must provide an environment name, e.g.
+```
+# show intended plan of action on a particular environment (but don't actually do anything)
+make demo plan
+make staging plan
+make prod plan
+
+# actually make changes to an environment
+make demo apply
+make staging apply
+make prod apply
+
+# destroy an environment
+make demo destroy
+make staging destroy
+make prod destroy
+```
 
 This will create your (empty) application on Heroku.
 
