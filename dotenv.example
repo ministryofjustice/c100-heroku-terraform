@@ -1,3 +1,9 @@
 # Create a copy of this file with the name .env
+
 export TF_VAR_heroku_api_key=your-heroku-api-key
 export TF_VAR_heroku_email=your email address
+
+# you can either hard-code your AWS creds here, or use these lines as-is
+# to read them from existing env vars AWS_ACCESS_KEY_ID & AWS_SECRET_ACCESS_KEY
+export TF_VAR_aws_access_key=${TF_VAR_aws_access_key:-$AWS_ACCESS_KEY_ID}
+export TF_VAR_aws_secret_key=${TF_VAR_aws_secret_key:-$AWS_SECRET_ACCESS_KEY}
