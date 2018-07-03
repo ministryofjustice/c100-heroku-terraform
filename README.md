@@ -16,6 +16,10 @@ Edit `.env` and update the environment variables, then;
 
     source .env
 
+You will also need to run the task to create the terraform workspaces - this lets terraform manage different states per environment:
+
+    `make create-workspaces`
+
 ## Running tasks
 
 The code is paramaterised, using an environment-specific config file (`environments/{env name}/terraform.tfvars`) to set appropriate values.

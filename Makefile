@@ -2,22 +2,30 @@
 demo: aws-vars-from-env
 	$(eval export TF_VAR_env=demo)
 	$(eval export env_dir=demo)
+	terraform workspace select demo
 	@true
 
 staging: aws-vars-from-env
 	$(eval export TF_VAR_env=staging)
 	$(eval export env_dir=staging)
+	terraform workspace select staging
 	@true
 
 prod: aws-vars-from-env
 	$(eval export TF_VAR_env=prod)
 	$(eval export env_dir=prod)
+	terraform workspace select prod
 	@true
 
 aws-vars-from-env:
 	$(eval export TF_VAR_aws_access_key="${AWS_ACCESS_KEY_ID}")
 	$(eval export TF_VAR_aws_secret_key="${AWS_SECRET_ACCESS_KEY}")
 	$(eval export TF_VAR_aws_region="eu-west-1")
+
+create-workspaces:
+	terraform workspace new demo
+	terraform workspace new staging
+	terraform workspace new prod
 
 
 init:

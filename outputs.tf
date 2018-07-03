@@ -1,9 +1,6 @@
-output "aws_access_key" {
-  value = "${var.aws_access_key}"
+output "sns_topic_name" {
+  value = "${module.aws_ses.sns_topic_name}"
 }
-output "aws_secret_key" {
-  value = "${var.aws_secret_key}"
-}
-output "aws_region" {
-  value = "${var.aws_region}"
+output "ses_config_set_name" {
+  value = "${module.aws_ses.ses_config_set_name}"
 }
