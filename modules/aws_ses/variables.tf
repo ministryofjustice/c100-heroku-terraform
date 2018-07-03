@@ -13,3 +13,6 @@ variable "ses_config_set_name" {
 variable "ses_sns_topic_name" {
   default = "c100-ses-dsd-io-sns-topic"
 }
+variable "event_destination_name" {
+  default = "event-destination-sns-topic"
+}

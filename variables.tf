@@ -50,3 +50,6 @@ variable "aws_ses_config_set_name" {
 variable "aws_ses_sns_topic_name" {
   default = "c100-ses-dsd-io-sns-topic"
 }
+variable "aws_event_destination_name" {
+  default = "event-destination-sns-topic"
+}

@@ -32,4 +32,6 @@ module "aws_ses" {
 
   ses_domain              = "${var.aws_ses_domain}"
   ses_sns_topic_name      = "${var.aws_ses_sns_topic_name}"
+  ses_config_set_name     = "${var.aws_ses_config_set_name}"
+  event_destination_name  = "${var.aws_event_destination_name}"
 }
