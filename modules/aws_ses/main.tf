@@ -18,7 +18,7 @@ resource "aws_sns_topic" "email_notifications" {
 }
 
 resource "aws_ses_event_destination" "sns_topic" {
-  name                   = "event-destination-sns-topic"
+  name                   = "${var.event_destination_name}"
   configuration_set_name = "${aws_ses_configuration_set.this_config_set.name}"
   enabled                = true
   matching_types         = ["bounce", "send", "delivery", "reject", "complaint"]
